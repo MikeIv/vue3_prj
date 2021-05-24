@@ -18,26 +18,7 @@
 
 
 <script>
-export default  {
-  props: {
-    notes: {
-      type: Array,
-      required: true
-    },
-    grid: {
-      type: Boolean,
-      required: true
-    }
-  },
-  methods: {
-    removeCard(index) {
-      console.log(`Заметка id ${index} удаление`)
-      this.$emit('remove', index)
 
-    }
-
-  }
-}
 
 </script>
 

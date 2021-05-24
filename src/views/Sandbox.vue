@@ -4,15 +4,23 @@
     <div class="wrapper-content">
       <section>
         <div class="container">
-          <section class="sandbox" style="overflow: hidden">
+          <section class="sandbox">
             <h1 class="v-hidden">Инструменты</h1>
 
-            <article class="sandbox__part" style="overflow: hidden">
+            <article class="sandbox__part">
               <h2 class="sandbox__h2">Vue</h2>
 
               <h3 class="sandbox__h3">Тестирование компонентов</h3>
 
               <message v-if="message" :message="message" />
+
+
+
+              <div class="vue-message">
+                <p>Message vue - {{ message }}</p>
+              </div>
+
+
 
               <newNote :note="note" @plusNote="addNote" />
 
@@ -55,7 +63,21 @@
   </div>
 </template>
 
+
+
+
 <script>
+
+import { createApp } from 'vue'
+
+createApp({
+  data: () => ({
+    message: 'Проверка записи'
+  })
+}).mount('vue-message');
+
+
+
 
 </script>
 

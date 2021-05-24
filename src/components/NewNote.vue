@@ -1,5 +1,6 @@
 <template>
 
+  заметка
 <!-- new note -->
 <div class="new-note">
   <input  type="text" class="new-note__input">
@@ -12,19 +13,19 @@
 
 
 <script>
-// export default  {
-//   props: {
-//     note: {
-//       type: Object,
-//       required: true
-//     }
-//   },
-//   methods: {
-//     addNote () {
-//       this.$emit('plusNote', this.note)
-//
-//     }
-//   }
-// }
+export default  {
+  props: {
+    note: {
+      type: Object,
+      required: true
+    }
+  },
+  methods: {
+    addNote () {
+      this.$emit('plusNote', this.note)
+
+    }
+  }
+}
 
 </script>
