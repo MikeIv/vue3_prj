@@ -1,10 +1,20 @@
 <template>
   <div class="vue-message">
-    <p>Message vue - {{ message }}</p>
+    <p>Сообщение - {{ message }}</p>
   </div>
+
 </template>
 
 <script>
+
+
+export default  {
+  props: {
+    data: {
+      message: 'Проверка записи'
+    }
+  }
+}
 
 
 </script>

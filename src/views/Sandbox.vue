@@ -21,7 +21,6 @@
               </div>
 
 
-
               <newNote :note="note" @plusNote="addNote" />
 
 
@@ -68,17 +67,17 @@
 
 <script>
 
-import { createApp } from 'vue'
+export default {
+  name: 'Sandbox',
+  components: {
 
-createApp({
+  },
   data: () => ({
-    message: 'Проверка записи'
+    title: 'Проверка',
+    message: 'Сообщение'
   })
-}).mount('vue-message');
 
-
-
-
+}
 </script>
 
 
