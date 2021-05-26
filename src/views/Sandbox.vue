@@ -12,16 +12,24 @@
 
               <h3 class="sandbox__h3">Тестирование компонентов</h3>
 
+              <!-- Message section -->
               <message v-if="message" :message="message" />
-
-
 
               <div class="vue-message">
                 <p>Message vue - {{ message }}</p>
               </div>
+              <!-- ================ -->
 
 
+              <!-- newNote section -->
               <newNote :note="note" @plusNote="addNote" />
+
+              <div class="new-note">
+                <input  type="text" class="new-note__input">
+                <textarea  class="new-note__textarea"></textarea>
+                <button  class="new-note__btn">New note</button>
+              </div>
+              <!-- ================ -->
 
 
               <!-- VUE App -->
@@ -53,7 +61,7 @@
 
               <!-- END App -->
 
-              <img alt="Vue logo" src="../assets/img/vue-logo.png" width="50" height="auto">
+              <img alt="Vue logo" src="../assets/img/vue-logo.svg" width="50" height="50">
             </article>
           </section>
         </div>

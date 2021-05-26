@@ -8,9 +8,30 @@
   <title>Vue 3</title>
 </head>
 <body class="page__body">
+
+<!-- Подключение svg спрайта  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="752" height="40"
+     viewBox="0 0 752 40" style="display: none;">
+  <symbol>
+    <svg id="icon-close" viewBox="0 0 40 40">
+      <path d="M27 14.41L25.59 13L20 18.59L14.41 13L13 14.41L18.59 20L13 25.59L14.41 27L20 21.41L25.59 27L27 25.59L21.41 20L27 14.41Z" fill="#5E5E5E"/>
+    </svg>
+    <svg id="icon-block-view" viewBox="0 0 40 40">
+      <path d="M18.5714 18.5714V10H10V18.5714H18.5714ZM30 18.5714V10H21.4286V18.5714H30ZM18.5714 30V21.4286H10V30H18.5714ZM30 30V21.4286H21.4286V30H30Z" fill="#757575"/>
+    </svg>
+    <svg id="icon-block-view-3" viewBox="0 0 40 40">
+      <path d="M30 15.2632V10H10V15.2632H30Z" fill="#757575"/>
+      <path d="M30 30V24.7368H10V30H30Z" fill="#757575"/>
+      <path d="m30 22.632v-5.2632h-20v5.2632h20z" fill="#757575"/>
+    </svg>
+  </symbol>
+</svg>
+<!-- ======================== -->
 <noscript>
   <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
 </noscript>
+
+
 
 <div id="header" class="header-section"></div>
 <div id="app" class="app-section"></div>
