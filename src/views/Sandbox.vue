@@ -13,21 +13,23 @@
               <h3 class="sandbox__h3">Тестирование компонентов</h3>
 
               <!-- Message section -->
-              <message v-if="message" :message="message" />
+<!--              <message v-if="message" :message="message" />-->
 
-              <div class="vue-message">
+              <div v-if="showMessage" class="vue-message">
                 <p>Message vue - {{ message }}</p>
               </div>
               <!-- ================ -->
 
 
               <!-- newNote section -->
-              <newNote :note="note" @plusNote="addNote" />
+<!--              <newNote :note="note" @plusNote="addNote" />-->
 
               <div class="new-note">
-                <input  type="text" class="new-note__input">
+                <input v-model="text" type="text" class="new-note__input">
                 <textarea  class="new-note__textarea"></textarea>
-                <button  class="new-note__btn">New note</button>
+                <button @click="getContent" class="new-note__btn">New note</button>
+
+                <h4 class="sandbox__h4 vue-notes__header">Проверка текста - {{ text }}</h4>
               </div>
               <!-- ================ -->
 
@@ -36,7 +38,7 @@
               <div class="vue-notes__header-block">
                 <h4 class="sandbox__h4 vue-notes__header">{{ title }}</h4>
 
-                <search />
+<!--                <search />-->
 
 
                 <!-- Buttons grid control -->
@@ -55,7 +57,21 @@
                 </section>
               </div>
 
-              <notes :notes="notes" :grid="grid" @remove="removeCard" />
+<!--              <notes :notes="notes" :grid="grid" @remove="removeCard" />-->
+
+              <ul class="vue-notes">
+                <li class="vue-note" v-for="(note, index) in notes" :key="index" :class="{ notewidth: !grid }">
+                  <div class="vue-note__item-icon" @click="removeCard(index)">
+                    <svg class="vue-note__icon" aria-hidden="true"
+                         role="presentation">
+                      <use xlink:href="#icon-close"></use>
+                    </svg>
+                  </div>
+                  <p class="note-header">{{ note.title }}</p>
+                  <p class="note-body">{{ note.descr }}</p>
+                  <span class="note-datу">{{ note.date }}</span>
+                </li>
+              </ul>
 
 
 
@@ -81,9 +97,37 @@ export default {
 
   },
   data: () => ({
-    title: 'Проверка',
-    message: 'Сообщение'
-  })
+    title: 'Блок заметок',
+    message: 'Проверка отображения сообщения',
+    text: '',
+    showMessage: false,
+
+    notes: [
+      {
+        title: 'Заметка №1',
+        descr: 'Содержание заметки',
+        date: new Date(Date.now()).toLocaleString()
+      },
+      {
+        title: 'Заметка №2',
+        descr: 'Содержание заметки',
+        date: new Date(Date.now()).toLocaleString()
+      },
+      {
+        title: 'Заметка №3',
+        descr: 'Содержание заметки',
+        date: new Date(Date.now()).toLocaleString()
+      }
+    ]
+  }),
+  methods: {
+    getLowerText () {
+      this.text = this.text.toLowerCase()
+    },
+    getContent () {
+      this.showMessage = !this.showMessage
+    }
+  }
 
 }
 </script>
