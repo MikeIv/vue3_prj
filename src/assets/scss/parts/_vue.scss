@@ -1,9 +1,26 @@
 .vue-message {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 4rem;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+
+  background-color: $exlight;
 
 }
 
-.vue-message p {
+.vue-message__txt {
   @include vue-h3;
+}
+
+.vue-message__txt span {
+  color: $warning;
 }
 
 
@@ -103,10 +120,10 @@ svg path {
 .vue-notes__header {
   display: flex;
   align-items: center;
-  flex-basis: 20rem;
-  flex-shrink: 1;
 
+  height: 4rem;
   margin: 0;
+  margin-top: 3rem;
   padding: 0;
 
   @include vue-h4;

@@ -15,8 +15,8 @@
               <!-- Message section -->
 <!--              <message v-if="message" :message="message" />-->
 
-              <div v-if="showMessage" class="vue-message">
-                <p>Message vue - {{ message }}</p>
+              <div class="vue-message">
+                <p class="vue-message__txt">Предупреждение обшибке - <span v-if="message">{{ message }}</span></p>
               </div>
               <!-- ================ -->
 
@@ -25,9 +25,9 @@
 <!--              <newNote :note="note" @plusNote="addNote" />-->
 
               <div class="new-note">
-                <input v-model="text" type="text" class="new-note__input">
-                <textarea  class="new-note__textarea"></textarea>
-                <button @click="getContent" class="new-note__btn">New note</button>
+                <input v-model="note.title" type="text" class="new-note__input">
+                <textarea v-model="note.descr"  class="new-note__textarea"></textarea>
+                <button @click="addNote" class="new-note__btn">New note</button>
 
                 <h4 class="sandbox__h4 vue-notes__header">Проверка текста - {{ text }}</h4>
               </div>
@@ -98,9 +98,15 @@ export default {
   },
   data: () => ({
     title: 'Блок заметок',
-    message: 'Проверка отображения сообщения',
     text: '',
-    showMessage: false,
+    message: null,
+
+    note: {
+
+      title: '',
+      descr: ''
+    },
+
 
     notes: [
       {
@@ -121,11 +127,19 @@ export default {
     ]
   }),
   methods: {
-    getLowerText () {
-      this.text = this.text.toLowerCase()
-    },
-    getContent () {
-      this.showMessage = !this.showMessage
+    addNote () {
+      let {title, descr} = this.note
+
+      if(title === '') {
+        this.message = 'Заполните поля!'
+        return false
+      }
+
+      this.notes.push({
+        title,
+        descr,
+        date: new Date(Date.now()).toLocaleString()
+      })
     }
   }
 

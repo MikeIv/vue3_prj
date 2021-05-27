@@ -341,6 +341,10 @@
             <a href="http://prgssr.ru/development/oformlenie-soderzhimogo-use-v-svg-s-pomoshyu-css.html" class="tools__item-link" target="_blank"></a>
             <p class="tools__item-txt">'use' в SVG с помощью CSS</p>
           </li>
+          <li class="tools__item tools__item--link">
+            <a href="https://habr.com/ru/company/macloud/blog/557796/" class="tools__item-link" target="_blank"></a>
+            <p class="tools__item-txt">Трюки CSS</p>
+          </li>
         </ul>
       </article>
 

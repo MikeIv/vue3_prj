@@ -181,7 +181,9 @@
   background-color: transparent;
 }
 
-
+.tools__item--link {
+  background-color: $lightblue;
+}
 
 .tools__item--link:hover {
   background-color: $light;
