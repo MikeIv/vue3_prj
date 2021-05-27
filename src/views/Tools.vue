@@ -24,6 +24,7 @@
     <section class="tools">
       <h1 class="v-hidden">Инструменты</h1>
 
+      <!-- Заголовки раздела -->
       <article class="tools__part">
 
         <ul class="tools__list tools__list--logo">
@@ -62,7 +63,7 @@
 
 
           <li class="tools__item tools__item--logo">
-            <a href="#" class="tools__item-link tools__item-link--logo">
+            <a href="#sass" class="tools__item-link tools__item-link--logo">
               <img class="tools__item-link-logo" src="../assets/img/sass-logo.svg" alt="логотип">
             </a>
           </li>
@@ -122,6 +123,7 @@
           </li>
         </ul>
       </article>
+      <!-- ================= -->
 
       <!-- Wordpress -->
       <article id="wordpress" class="tools__part">
@@ -150,7 +152,7 @@
             <p class="tools__item-txt">Финты Вордпресс</p>
           </li>
           <li class="tools__item tools__item--link">
-            <a href="developer.wordpress.org/resource/dashicons" class="tools__item-link" target="_blank"></a>
+            <a href="https://developer.wordpress.org/resource/dashicons" class="tools__item-link" target="_blank"></a>
             <p class="tools__item-txt">Иконки Вордпресс</p>
           </li>
         </ul>
@@ -217,7 +219,12 @@
             <p class="tools__item-txt">Плагины для VS Code</p>
           </li>
           <li class="tools__item"><p class="tools__item-txt">SVG Preview</p></li>
+          <li class="tools__item"><p class="tools__item-txt">Beautify</p></li>
+          <li class="tools__item"><p class="tools__item-txt">Material Icon Theme</p></li>
           <li class="tools__item"><p class="tools__item-txt">Inliner</p></li>
+          <li class="tools__item"><p class="tools__item-txt">Trailing Spaces</p></li>
+          <li class="tools__item"><p class="tools__item-txt">Vetur</p></li>
+          <li class="tools__item"><p class="tools__item-txt">Compile Hero</p></li>
         </ul>
       </article>
 
@@ -290,6 +297,11 @@
               <p class="tools__item-txt-cmd">https://placeimg.com/400/150/any</p>
             </div>
           </li>
+
+          <li class="tools__item tools__item--link tools__item--mt">
+            <a href="https://element.eleme.io/" class="tools__item-link" target="_blank"></a>
+            <p class="tools__item-txt">Element Компоненты</p>
+          </li>
         </ul>
       </article>
 
@@ -297,7 +309,7 @@
       <article id="html" class="tools__part">
         <div class="tools__header-block">
           <img class="tools__logo" src="../assets/img/html5-logo.svg" alt="логотип wordpress">
-          <h2 class="tools__h2">HTML</h2>
+          <h2 class="tools__h2"></h2>
         </div>
 
 
@@ -319,7 +331,7 @@
       <article id="css" class="tools__part">
         <div class="tools__header-block">
           <img class="tools__logo" src="../assets/img/css-logo.svg" alt="логотип wordpress">
-          <h2 class="tools__h2">CSS</h2>
+          <h2 class="tools__h2"></h2>
         </div>
 
 
@@ -328,6 +340,23 @@
           <li class="tools__item tools__item--link">
             <a href="http://prgssr.ru/development/oformlenie-soderzhimogo-use-v-svg-s-pomoshyu-css.html" class="tools__item-link" target="_blank"></a>
             <p class="tools__item-txt">'use' в SVG с помощью CSS</p>
+          </li>
+        </ul>
+      </article>
+
+      <!-- SASS -->
+      <article id="sass" class="tools__part">
+        <div class="tools__header-block">
+          <img class="tools__logo" src="../assets/img/sass-logo.svg" alt="логотип wordpress">
+          <h2 class="tools__h2"></h2>
+        </div>
+
+
+        <h3 class="tools__h3">Полезное</h3>
+        <ul class="tools__list">
+          <li class="tools__item tools__item--link">
+            <a href="https://sass-scss.ru/" class="tools__item-link" target="_blank"></a>
+            <p class="tools__item-txt">База знаний</p>
           </li>
         </ul>
       </article>
