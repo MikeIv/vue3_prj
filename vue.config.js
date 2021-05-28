@@ -1,7 +1,7 @@
 module.exports = {
 
   css: {
-    modules: true,
+    requireModuleExtension: false,
     sourceMap: true,
     loaderOptions: {
       sass: {
