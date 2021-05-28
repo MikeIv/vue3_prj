@@ -1513,7 +1513,7 @@ select {
   color: #ffffff;
 }
 
-.vue-message {
+.vue-message__wrapper {
   display: flex;
   align-items: center;
   width: 100%;
@@ -1526,10 +1526,16 @@ select {
   background-color: #e4e5e1;
 }
 
+.vue-message {
+  display: flex;
+  align-items: center;
+}
+
 .vue-message__txt {
   font-size: 2rem;
   font-weight: normal;
   line-height: 1.25;
+  color: #415A77;
 }
 
 .vue-message__txt span {
@@ -1540,6 +1546,7 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
   flex-basis: 30rem;
   margin: 0;
   margin-bottom: 3rem;
@@ -1586,7 +1593,6 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 12rem;
   height: 4rem;
   margin: 0;
   padding: 0;

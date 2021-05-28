@@ -13,24 +13,14 @@
               <h3 class="sandbox__h3">Тестирование компонентов</h3>
 
               <!-- Message section -->
-<!--              <message v-if="message" :message="message" />-->
-
-              <div class="vue-message">
-                <p class="vue-message__txt">Предупреждение обшибке - <span v-if="message">{{ message }}</span></p>
+              <div class="vue-message__wrapper">
+                <message :message="message"/>
               </div>
               <!-- ================ -->
 
 
               <!-- newNote section -->
-<!--              <newNote :note="note" @plusNote="addNote" />-->
-
-              <div class="new-note">
-                <input v-model="note.title" type="text" class="new-note__input">
-                <textarea v-model="note.descr"  class="new-note__textarea"></textarea>
-                <button @click="addNote" class="new-note__btn">New note</button>
-
-                <h4 class="sandbox__h4 vue-notes__header">Проверка текста - {{ text }}</h4>
-              </div>
+              <newNote :note="note" @note="addNote" />
               <!-- ================ -->
 
 
@@ -38,7 +28,7 @@
               <div class="vue-notes__header-block">
                 <h4 class="sandbox__h4 vue-notes__header">{{ title }}</h4>
 
-<!--                <search />-->
+                <!--                <search />-->
 
 
                 <!-- Buttons grid control -->
@@ -57,7 +47,7 @@
                 </section>
               </div>
 
-<!--              <notes :notes="notes" :grid="grid" @remove="removeCard" />-->
+              <!--              <notes :notes="notes" :grid="grid" @remove="removeCard" />-->
 
               <ul class="vue-notes">
                 <li class="vue-note" v-for="(note, index) in notes" :key="index" :class="{ notewidth: !grid }">
@@ -91,20 +81,24 @@
 
 <script>
 
+import message from '@/components/Message.vue'
+import newNote from '@/components/NewNote.vue'
+
 export default {
   name: 'Sandbox',
   components: {
-
+    message, newNote
   },
   data: () => ({
     title: 'Блок заметок',
     text: '',
     message: null,
 
-    note: {
 
+    note: {
       title: '',
-      descr: ''
+      descr: '',
+      text: 'Succes'
     },
 
 
@@ -140,7 +134,7 @@ export default {
         descr,
         date: new Date(Date.now()).toLocaleString()
       })
-          this.note.title = '',
+      this.note.title = '',
           this.note.descr = '',
           this.message = null
 
