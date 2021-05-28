@@ -26,7 +26,6 @@
 
       <!-- Заголовки раздела -->
       <article class="tools__part">
-
         <ul class="tools__list tools__list--logo">
           <li class="tools__item tools__item--logo">
             <a href="#html" class="tools__item-link tools__item-link--logo">

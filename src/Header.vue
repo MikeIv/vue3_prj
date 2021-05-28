@@ -14,7 +14,6 @@
           <li class="page-nav__item"><router-link to="/contacts" exact class="main-nav__link">Контакты</router-link></li>
         </ul>
       </nav>
-
     </div>
 
 

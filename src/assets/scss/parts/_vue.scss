@@ -24,6 +24,97 @@
 }
 
 
+
+// New Note
+
+.new-note {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-basis: 30rem;
+
+  margin: 0;
+  margin-bottom: 3rem;
+  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+
+  font-size: 1.6rem;
+
+}
+
+.new-note .new-note__input {
+  width: 25rem;
+  height: 4rem;
+
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+
+  font-size: inherit;
+
+  border: 1px solid $gray;
+  border-radius: 0.3rem;
+  background-color: $exlightgray;
+}
+
+.new-note__textarea {
+  width: 25rem;
+  height: 10rem;
+
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+
+  font-size: inherit;
+
+  border: 1px solid $gray;
+  border-radius: 0.3rem;
+  background-color: $exlightgray;
+}
+
+.new-note__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 12rem;
+  height: 4rem;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  font-size: 1.6rem;
+  color: $white;
+
+  background-color: $base;
+  border-radius: 0.3rem;
+  border: none;
+
+  cursor: pointer;
+}
+
+.new-note__btn:hover {
+  background-color: $light;
+}
+
+
+
+
+
+
+
 // Notes
 .vue-notes {
   display: flex;

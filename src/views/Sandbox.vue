@@ -140,6 +140,10 @@ export default {
         descr,
         date: new Date(Date.now()).toLocaleString()
       })
+          this.note.title = '',
+          this.note.descr = '',
+          this.message = null
+
     }
   }
 
