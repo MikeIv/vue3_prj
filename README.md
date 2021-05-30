@@ -1,24 +1,30 @@
-# vue3
+# Поект шаблона на vue3
 
-## Project setup
-```
-npm install
-```
+---
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+**Версия 2021**
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- новое – **реализация сайта на  Vue.js 3**
 
-### Lints and fixes files
-```
-npm run lint
-```
 
+
+
+---
+
+**Статус**
+
+- в разработке
+
+***
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+---
+
+<a href="https://mikeivanov.ru/">
+<img align="left" width="110" height="128" alt="Лого" src="https://mikeiv.github.io/portfolio/img/my-logo.svg">
+</a>
+
+
+
+
