@@ -155,6 +155,8 @@
   transition: 0.3s cubic-bezier(.12,.38,.77,.73);
 }
 
+
+
 .vue-note:hover {
 
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
@@ -243,5 +245,5 @@ svg path {
 }
 
 .vue-notes__item-icon.active .vue-note__icon:hover {
-  fill: $light;
+  fill: $darkvue;
 }

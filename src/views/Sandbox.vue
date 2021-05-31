@@ -75,15 +75,14 @@ export default {
 
   },
   data: () => ({
-    title: 'Блок заметок',
+    title: 'Раздел заметок',
     text: '',
-
+    grid: true,
 
     note: {
       title: '',
       descr: ''
     },
-
 
     items: [
       {
@@ -101,7 +100,7 @@ export default {
         descr: 'Содержание заметки',
         date: new Date(Date.now()).toLocaleString()
       }
-    ]
+    ],
 
   }),
   methods: {
