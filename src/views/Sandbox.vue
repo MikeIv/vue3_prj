@@ -13,24 +13,10 @@
               <h3 class="sandbox__h3">Тестирование компонентов</h3>
 
               <!-- Message section -->
-
               <!-- ================ -->
 
-
-              <newNote @additem="addItem"  />
-
-
               <!-- newNote section -->
-<!--              <newNote @addnote="addNote"   />-->
-
-
-<!--              <div class="new-note">
-                <input v-model="note.title" type="text" class="new-note__input">
-                <textarea v-model="note.descr"  class="new-note__textarea"></textarea>
-                <button @click="addNote" class="new-note__btn">Добавить заметку</button>
-
-                <h4 class="sandbox__h4 vue-notes__header">Проверка текста - {{ text }}</h4>
-              </div>-->
+              <newNote @additem="addItem"  />
               <!-- ================ -->
 
 
@@ -42,7 +28,7 @@
 
 
                 <!-- Buttons grid control -->
-<!--                <section class="vue-notes__h-icon-block">
+                <section class="vue-notes__h-icon-block">
                   <h3 class="v-hidden">Кнопки визуального отображения блоков</h3>
                   <div class="vue-notes__item-icon" :class="{ active: grid }" @click="grid = true">
                     <svg class="vue-note__icon" role="button">
@@ -54,42 +40,13 @@
                       <use xlink:href="#icon-block-view-3"></use>
                     </svg>
                   </div>
-                </section>-->
-
+                </section>
 
               </div>
 
-              <!--              <notes :notes="notes" :grid="grid" @remove="removeCard" />-->
-<!--
-              <ul class="vue-notes">
-                <li class="vue-note" v-for="(note, index) in notes" :key="index" :class="{ notewidth: !grid }">
-                  <div class="vue-note__item-icon" @click="removeCard(index)">
-                    <svg class="vue-note__icon" aria-hidden="true"
-                         role="presentation">
-                      <use xlink:href="#icon-close"></use>
-                    </svg>
-                  </div>
-                  <p class="note-header">{{ note.title }}</p>
-                  <p class="note-body">{{ note.descr }}</p>
-                  <span class="note-datу">{{ note.date }}</span>
-                </li>
-              </ul>-->
-
-
-
-              <ul class="vue-notes">
-                <li class="vue-note" v-for="(item, index) in items" :key="index">
-                  <div class="vue-note__item-icon">
-                    <svg class="vue-note__icon" aria-hidden="true"
-                         role="presentation">
-                      <use xlink:href="#icon-close"></use>
-                    </svg>
-                  </div>
-                  <p class="note-header">{{ item.title }}</p>
-                  <p class="note-body">{{ item.descr }}</p>
-                  <span class="note-datу">{{ item.date }}</span>
-                </li>
-              </ul>
+              <!-- Notes section -->
+              <notes :items="items" @remove="removeItem"  />
+              <!-- ================ -->
 
               <!-- END App -->
 
@@ -107,13 +64,14 @@
 
 <script>
 
-// import message from '@/components/Message.vue'
+import notes from '@/components/Notes.vue'
 import newNote from '@/components/NewNote.vue'
 
 export default {
   name: 'Sandbox',
   components: {
-    newNote
+    newNote,
+    notes
 
   },
   data: () => ({
@@ -147,48 +105,14 @@ export default {
 
   }),
   methods: {
-   /* addNote () {
-
-      let {title, descr} = this.note
-
-      if (title === '') {
-        this.message = 'Необходимо написать заголовок'
-        return false
-      }
-
-      this.notes.push({
-        title,
-        descr,
-        date: new Date(Date.now()).toLocaleString()
-      })
-      this.message = null
-      this.note.title = ''
-      this.note.descr = ''
-    },*/
- /*   removeNote (index) {
-      this.notes.splice(index, 1)
-    },*/
-
     addItem (item) {
-
-      this.items.push(item)
-
-    /*  if (item = null) {
-        this.message = 'Необходимо написать заголовок'
-        return false
-      }*/
-
-   /*   item.message = null
-      item.title = ''
-      item.descr = ''*/
-
-
-    }
-
+        this.items.push(item)
+      },
+      removeItem (index) {
+        this.items.splice(index, 1)
+      }
     }
   }
-
-
 
 
 </script>

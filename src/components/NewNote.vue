@@ -20,13 +20,11 @@
 
 export default {
 
-
   data: () => ({
     title: '',
     descr: '',
     message: null
   }),
-
 
   methods: {
     addItem () {
@@ -41,11 +39,9 @@ export default {
       }else {
         this.$emit('additem',  newitem)
       }
-
           this.title = '',
           this.descr = '',
           this.message = null
-
   }
 },
 

@@ -1,23 +1,37 @@
 <template>
   <!--  note list-->
-  <div class="vue-notes">
-    <div class="vue-note" v-for="(note, index) in notes" :key="index" :class="{ notewidth: !grid }">
-      <div class="vue-note__item-icon" @click="removeCard(index)">
+  <ul class="vue-notes">
+    <li class="vue-note" v-for="(item, index) in items" :key="index">
+      <div class="vue-note__item-icon" @click="removeItem(index)">
         <svg class="vue-note__icon" aria-hidden="true"
              role="presentation">
           <use xlink:href="#icon-close"></use>
         </svg>
       </div>
-        <p class="note-header">{{ note.title }}</p>
-        <p class="note-body">{{ note.descr }}</p>
-        <span class="note-datу">{{ note.date }}</span>
-    </div>
-  </div>
+      <p class="note-header">{{ item.title }}</p>
+      <p class="note-body">{{ item.descr }}</p>
+      <span class="note-datу">{{ item.date }}</span>
+    </li>
+  </ul>
 
 </template>
 
 
 <script>
+export default {
+  props: {
+    items: {
+      type: Array,
+      required: true
+    }
+  },
+  methods: {
+    removeItem (index) {
+      this.$emit('remove', index)
+
+    }
+  }
+}
 
 
 </script>
