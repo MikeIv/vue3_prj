@@ -45,7 +45,7 @@
               </div>
 
               <!-- Notes section -->
-              <notes :items="items" @remove="removeItem"  />
+              <notes :items="items" @remove="removeItem" :grid="grid" />
               <!-- ================ -->
 
               <!-- END App -->
@@ -79,6 +79,7 @@ export default {
     text: '',
     grid: true,
 
+
     note: {
       title: '',
       descr: ''
@@ -109,10 +110,9 @@ export default {
       },
       removeItem (index) {
         this.items.splice(index, 1)
-      }
+      },
     }
   }
-
 
 </script>
 

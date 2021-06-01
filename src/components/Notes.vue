@@ -8,7 +8,7 @@
           <use xlink:href="#icon-close"></use>
         </svg>
       </div>
-      <p class="note-header">{{ item.title }} :grid="3"</p>
+      <p class="note-header">{{ item.title }}</p>
       <p class="note-body">{{ item.descr }}</p>
       <span class="note-datу">{{ item.date }}</span>
     </li>
@@ -19,27 +19,26 @@
 
 <script>
 export default {
-
   props: {
     items: {
       type: Array,
       required: true
     },
+
     grid: {
       type: Boolean,
-      required: true,
+      required: true
     }
 
   },
 
-
   methods: {
     removeItem (index) {
       this.$emit('remove', index)
+    },
 
-    }
+  },
 
-  }
 
 }
 
