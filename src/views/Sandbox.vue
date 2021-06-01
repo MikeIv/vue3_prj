@@ -20,13 +20,13 @@
               <!-- ================ -->
 
 
-              <!-- VUE App -->
+              <!-- Header section -->
               <div class="vue-notes__header-block">
                 <h4 class="sandbox__h4 vue-notes__header">{{ title }}</h4>
-
-                <!--                <search />-->
-
-
+                <search
+                    :value="search"
+                    @search="search = $event"
+                    placeholder="Поиск"  />
                 <!-- Buttons grid control -->
                 <section class="vue-notes__h-icon-block">
                   <h3 class="v-hidden">Кнопки визуального отображения блоков</h3>
@@ -41,11 +41,11 @@
                     </svg>
                   </div>
                 </section>
-
               </div>
+              <!-- ================ -->
 
               <!-- Notes section -->
-              <notes :items="items" @remove="removeItem" :grid="grid" />
+              <notes :items="itemsFilter" @remove="removeItem" :grid="grid" />
               <!-- ================ -->
 
               <!-- END App -->
@@ -66,17 +66,20 @@
 
 import notes from '@/components/Notes.vue'
 import newNote from '@/components/NewNote.vue'
+import search from '@/components/Search.vue'
 
 export default {
   name: 'Sandbox',
   components: {
     newNote,
-    notes
+    notes,
+    search
 
   },
   data: () => ({
     title: 'Раздел заметок',
     text: '',
+    search: '',
     grid: true,
 
 
@@ -104,6 +107,23 @@ export default {
     ],
 
   }),
+  computed: {
+    itemsFilter () {
+      let array = this.items,
+          search = this.search
+      if(!search) return array
+
+      search = search.trim().toLowerCase()
+
+      array = array.filter(function (item) {
+        if (item.title.toLowerCase().indexOf(search) !==-1) {
+          return item
+        }
+      })
+
+      return array;
+    }
+  },
   methods: {
     addItem (item) {
         this.items.push(item)

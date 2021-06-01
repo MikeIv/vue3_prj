@@ -1682,9 +1682,10 @@ svg path {
 .vue-notes__header {
   display: flex;
   align-items: center;
+  flex-shrink: 1;
+  width: auto;
   height: 4rem;
   margin: 0;
-  margin-top: 3rem;
   padding: 0;
   font-size: 1.8rem;
   font-weight: bold;
@@ -1708,6 +1709,40 @@ svg path {
 
 .vue-notes__item-icon.active .vue-note__icon:hover {
   fill: #2b9264;
+}
+
+.vue_search_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.vue_search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.vue_search__input {
+  display: flex;
+  align-items: center;
+  width: 20rem;
+  height: 3rem;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #41B883;
+  border-radius: 0.4rem;
+  border: 1px solid #878C99;
 }
 
 /*# sourceMappingURL=styles.css.map */
