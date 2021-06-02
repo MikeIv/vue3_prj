@@ -188,9 +188,6 @@
 
 
 
-svg path {
-  fill: inherit;
-}
 
 // Notes header
 .vue-notes__header-block {
@@ -289,4 +286,118 @@ svg path {
 
   border-radius: 0.4rem;
   border: 1px solid $gray;
+}
+
+
+
+// Modals
+.modal__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: fade-out($dark, 0.5);
+
+  z-index: 2;
+}
+
+.modal__btn-wrapper {
+  display: flex;
+  align-items: center;
+
+
+}
+
+.modal__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  box-sizing: border-box;
+
+  font-size: $mainFS;
+  color: $white;
+  background-color: $vue;
+  border: none;
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+
+}
+
+.modal__btn:hover {
+  background-color: $darkvue;
+}
+
+
+
+
+.modal__content {
+  position: relative;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+
+  width: 40rem;
+  min-height: 20rem;
+
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+
+  background-color: $exlight;
+  border-radius: 0.5rem;
+}
+
+.modal__title {
+  width: 100%;
+
+  margin-bottom: 1rem;
+
+  font-size: $titleFS;
+  font-weight: 400;
+  color: $base;
+}
+
+.modal__item-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 4rem;
+  height: 4rem;
+
+  cursor: pointer;
+}
+
+.modal__icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.modal__icon {
+  fill: $vue;
+}
+
+.modal__icon:hover {
+  fill: $darkvue;
+}
+
+svg path {
+  fill: inherit;
 }

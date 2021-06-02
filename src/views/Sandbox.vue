@@ -12,13 +12,9 @@
 
               <h3 class="sandbox__h3">Тестирование компонентов</h3>
 
-              <!-- Message section -->
-              <!-- ================ -->
-
               <!-- newNote section -->
               <newNote @additem="addItem"  />
               <!-- ================ -->
-
 
               <!-- Header section -->
               <div class="vue-notes__header-block">
@@ -27,6 +23,8 @@
                     :value="search"
                     @search="search = $event"
                     placeholder="Поиск"  />
+
+
                 <!-- Buttons grid control -->
                 <section class="vue-notes__h-icon-block">
                   <h3 class="v-hidden">Кнопки визуального отображения блоков</h3>
@@ -48,7 +46,13 @@
               <notes :items="itemsFilter" @remove="removeItem" :grid="grid" />
               <!-- ================ -->
 
-              <!-- END App -->
+
+              <!-- MODALS -->
+              <div class="modal__btn-wrapper">
+                <button class="modal__btn" @click="modalView = !modalView">Открыть</button>
+              </div>
+              <modals v-if="modalView" @close="modalView = !modalView" />
+              <!-- ================ -->
 
               <img alt="Vue logo" src="../assets/img/vue-logo.svg" width="50" height="50">
             </article>
@@ -67,13 +71,15 @@
 import notes from '@/components/Notes.vue'
 import newNote from '@/components/NewNote.vue'
 import search from '@/components/Search.vue'
+import modals from '@/components/Modals.vue'
 
 export default {
   name: 'Sandbox',
   components: {
     newNote,
     notes,
-    search
+    search,
+    modals
 
   },
   data: () => ({
@@ -81,7 +87,7 @@ export default {
     text: '',
     search: '',
     grid: true,
-
+    modalView: false,
 
     note: {
       title: '',
