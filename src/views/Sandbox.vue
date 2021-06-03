@@ -2,7 +2,7 @@
   <div class="wrapper">
 
     <div class="wrapper-content">
-      <section>
+
         <div class="container">
           <section class="sandbox">
             <h1 class="v-hidden">Инструменты</h1>
@@ -51,14 +51,20 @@
               <div class="modal__btn-wrapper">
                 <button class="modal__btn" @click="modalView = !modalView">Открыть</button>
               </div>
-              <modals v-if="modalView" @close="modalView = !modalView" />
+
+              <modals v-if="modalView" @close="modalView = !modalView">
+                <slot class="modal__info-block">
+                  <p class="modal__info-txt">Содержимое окна</p>
+                </slot>
+              </modals>
+
               <!-- ================ -->
 
               <img alt="Vue logo" src="../assets/img/vue-logo.svg" width="50" height="50">
             </article>
           </section>
         </div>
-      </section>
+
     </div>
   </div>
 </template>
@@ -144,7 +150,7 @@ export default {
 
 
 
-<style lang="scss">
+<style lang="scss" >
 
 .page__body {
   display: grid;
@@ -166,5 +172,8 @@ export default {
 .header-section {
   display: block;
 }
+
+
+
 
 </style>
