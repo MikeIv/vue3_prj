@@ -52,7 +52,7 @@
                 <button class="modal__btn" @click="modalView = !modalView">Открыть</button>
               </div>
 
-              <modals v-if="modalView" @close="modalView = !modalView">
+              <modals v-show="modalView" @close="modalView = !modalView">
                 <slot class="modal__info-block">
                   <p class="modal__info-txt">Содержимое окна</p>
                 </slot>
