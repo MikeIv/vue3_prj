@@ -48,16 +48,29 @@
 
 
               <!-- MODALS -->
-              <div class="modal__btn-wrapper">
-                <button class="modal__btn" @click="modalView = !modalView">Открыть</button>
+              <div class="modal__section-wrapper">
+                <!-- first modal -->
+                <div class="modal__btn-wrapper">
+                  <button class="modal__btn" @click="modalView = !modalView">Открыть</button>
+                </div>
+
+                <modals v-show="modalView" @close="modalView = false">
+                  <slot class="modal__info-block">
+                    <p class="modal__info-txt">Содержимое окна</p>
+                  </slot>
+                </modals>
+
+                <!-- second modal -->
+                <div class="modal__btn-wrapper">
+                  <button class="modal__btn" @click="modalView = !modalView">Открыть форму</button>
+                </div>
+
+                <modals v-show="modalView" @close="modalView = false">
+                  <slot class="modal__info-block">
+                    <p class="modal__info-txt">Содержимое окна</p>
+                  </slot>
+                </modals>
               </div>
-
-              <modals v-show="modalView" @close="modalView = !modalView">
-                <slot class="modal__info-block">
-                  <p class="modal__info-txt">Содержимое окна</p>
-                </slot>
-              </modals>
-
               <!-- ================ -->
 
               <img alt="Vue logo" src="../assets/img/vue-logo.svg" width="50" height="50">

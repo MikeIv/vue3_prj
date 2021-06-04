@@ -1741,6 +1741,14 @@ select {
   border: 1px solid #878C99;
 }
 
+.modal__section-wrapper {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
 .modal__wrapper {
   position: fixed;
   top: 0;
