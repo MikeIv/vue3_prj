@@ -1,23 +1,4 @@
 <template>
-<!--  <header class="header-pages">-->
-
-<!--    <div class="header__page-wrapper">-->
-<!--      <a href="/">-->
-<!--        <img src="../assets/img/my-logo.svg" alt="logo" class="header__main-logo">-->
-<!--      </a>-->
-<!--      <div class="header__left-line"></div>-->
-
-<!--      <h1 class="header__page-h1">Инструменты</h1>-->
-<!--    </div>-->
-
-<!--    <nav class="page-nav">-->
-<!--      <ul class="page-nav__list">-->
-<!--        <li class="page-nav__item"><a href="/portfolio" class="page-nav__link">Портфолио</a></li>-->
-<!--        <li class="page-nav__item"><a href="/sandbox" class="page-nav__link">Песочница</a></li>-->
-<!--        <li class="page-nav__item"><a href="/contacts" class="page-nav__link">Контакты</a></li>-->
-<!--      </ul>-->
-<!--    </nav>-->
-<!--  </header>-->
 
 
   <main>
@@ -80,7 +61,7 @@
           </li>
 
           <li class="tools__item tools__item--logo">
-            <a href="#" class="tools__item-link tools__item-link--logo">
+            <a href="#gulp" class="tools__item-link tools__item-link--logo">
               <img class="tools__item-link-logo" src="../assets/img/gulp-logo.svg" alt="логотип">
             </a>
           </li>
@@ -160,7 +141,7 @@
       <!-- PHPSotrm -->
       <article id="phpstorm" class="tools__part">
         <div class="tools__header-block">
-          <img class="tools__logo" src="../assets/img/icon-phpstorm.svg" alt="логотип wordpress">
+          <img class="tools__logo" src="../assets/img/icon-phpstorm.svg" alt="логотип phpstorm">
           <h2 class="tools__h2">PHPStorm</h2>
         </div>
 
@@ -207,7 +188,7 @@
       <!-- VS Code -->
       <article id="vscode" class="tools__part">
         <div class="tools__header-block">
-          <img class="tools__logo" src="../assets/img/vsc_logo.svg" alt="логотип wordpress">
+          <img class="tools__logo" src="../assets/img/vsc_logo.svg" alt="логотип vs code">
           <h2 class="tools__h2">VS Code</h2>
         </div>
 
@@ -231,7 +212,7 @@
       <!-- Vue js -->
       <article id="vue" class="tools__part">
         <div class="tools__header-block">
-          <img class="tools__logo" src="../assets/img/vue-logo.svg" alt="логотип wordpress">
+          <img class="tools__logo" src="../assets/img/vue-logo.svg" alt="логотип vue">
           <h2 class="tools__h2">Vue</h2>
         </div>
 
@@ -275,10 +256,28 @@
         </ul>
       </article>
 
+
+      <!-- GULP -->
+      <article id="gulp" class="tools__part">
+        <div class="tools__header-block">
+          <img class="tools__logo" src="../assets/img/gulp-logo.svg" alt="логотип gulp">
+          <h2 class="tools__h2"></h2>
+        </div>
+
+
+        <h3 class="tools__h3">Полезное</h3>
+        <ul class="tools__list">
+          <li class="tools__item tools__item--link">
+            <a href="https://habr.com/ru/post/560894/" class="tools__item-link" target="_blank"></a>
+            <p class="tools__item-txt">Вариант сборки</p>
+          </li>
+        </ul>
+      </article>
+
       <!-- Figma&Design -->
       <article id="figma" class="tools__part">
         <div class="tools__header-block">
-          <img class="tools__logo" src="../assets/img/figma-logo.svg" alt="логотип wordpress">
+          <img class="tools__logo" src="../assets/img/figma-logo.svg" alt="логотип figma">
           <h2 class="tools__h2">Дизайн</h2>
         </div>
 
@@ -307,7 +306,7 @@
       <!-- HTML -->
       <article id="html" class="tools__part">
         <div class="tools__header-block">
-          <img class="tools__logo" src="../assets/img/html5-logo.svg" alt="логотип wordpress">
+          <img class="tools__logo" src="../assets/img/html5-logo.svg" alt="логотип html">
           <h2 class="tools__h2"></h2>
         </div>
 
@@ -329,7 +328,7 @@
       <!-- CSS -->
       <article id="css" class="tools__part">
         <div class="tools__header-block">
-          <img class="tools__logo" src="../assets/img/css-logo.svg" alt="логотип wordpress">
+          <img class="tools__logo" src="../assets/img/css-logo.svg" alt="логотип css">
           <h2 class="tools__h2"></h2>
         </div>
 
