@@ -62,16 +62,36 @@
 
                 <!-- second modal -->
                 <div class="modal__btn-wrapper">
-                  <button class="modal__btn" @click="modalView = !modalView">Открыть форму</button>
+                  <button class="modal__btn" @click="modalForm.show = !modalForm.show">Открыть форму</button>
                 </div>
 
-                <modals v-show="modalView" @close="modalView = false">
-                  <slot class="modal__info-block">
-                    <p class="modal__info-txt">Содержимое окна</p>
+                <modals v-show="modalForm.show" @close="modalForm.show = false" title="Modal with Form">
+                  <slot>
+                    <form class="modal__form" @submit.prevent="submitForm">
+                      <label class="modal__label">Имя:</label>
+                      <input type="text" class="modal__input" v-model="modalForm.name" required>
+                      <label class="modal__label">Email:</label>
+                      <input type="email" class="modal__input" v-model="modalForm.email" required>
+                      <button class="modal__btn modal__btn--submit">Отправить</button>
+                    </form>
                   </slot>
                 </modals>
+
+
+                <!-- modal validate -->
+                <div class="modal__btn-wrapper">
+                  <button class="modal__btn" @click="modalValidate = !modalValidate">Форма с валидацией</button>
+                </div>
+                <modalValidate v-show="modalValidate" @close="modalValidate = false" />
+                <!-- ================ -->
+
+
               </div>
               <!-- ================ -->
+
+
+
+
 
               <img alt="Vue logo" src="../assets/img/vue-logo.svg" width="50" height="50">
             </article>
@@ -91,6 +111,7 @@ import notes from '@/components/Notes.vue'
 import newNote from '@/components/NewNote.vue'
 import search from '@/components/Search.vue'
 import modals from '@/components/Modals.vue'
+import modalValidate from '@/components/ModalValidate.vue'
 
 export default {
   name: 'Sandbox',
@@ -98,7 +119,8 @@ export default {
     newNote,
     notes,
     search,
-    modals
+    modals,
+    modalValidate
 
   },
   data: () => ({
@@ -107,6 +129,12 @@ export default {
     search: '',
     grid: true,
     modalView: false,
+    modalForm: {
+      show: false,
+      name: '',
+      email: ''
+    },
+    modalValidate: false,
 
     note: {
       title: '',
@@ -156,6 +184,15 @@ export default {
       removeItem (index) {
         this.items.splice(index, 1)
       },
+    submitForm () {
+      console.log({
+        name:  this.modalForm.name,
+        email: this.modalForm.email
+      })
+          this.modalForm.name = '',
+          this.modalForm.email = ''
+    }
+
     }
   }
 

@@ -61,6 +61,12 @@
           </li>
 
           <li class="tools__item tools__item--logo">
+            <a href="#git" class="tools__item-link tools__item-link--logo">
+              <img class="tools__item-link-logo" src="../assets/img/git-logo.svg" alt="логотип">
+            </a>
+          </li>
+
+          <li class="tools__item tools__item--logo">
             <a href="#gulp" class="tools__item-link tools__item-link--logo">
               <img class="tools__item-link-logo" src="../assets/img/gulp-logo.svg" alt="логотип">
             </a>
@@ -107,7 +113,7 @@
 
       <!-- Wordpress -->
       <article id="wordpress" class="tools__part">
-        <img class="tools__logo" src="../assets/img/wordpress_logo.svg" alt="логотип wordpress">
+        <img class="tools__logo" src="../assets/img/wordpress-logo.svg" alt="логотип wordpress">
         <h3 class="tools__h3">Plug-In</h3>
         <ul class="tools__list">
           <li class="tools__item"><p class="tools__item-txt">Cyr-To-Lat</p></li>
@@ -142,7 +148,7 @@
       <article id="phpstorm" class="tools__part">
         <div class="tools__header-block">
           <img class="tools__logo" src="../assets/img/icon-phpstorm.svg" alt="логотип phpstorm">
-          <h2 class="tools__h2">PHPStorm</h2>
+          <h2 class="tools__h2"></h2>
         </div>
 
 
@@ -189,7 +195,7 @@
       <article id="vscode" class="tools__part">
         <div class="tools__header-block">
           <img class="tools__logo" src="../assets/img/vsc_logo.svg" alt="логотип vs code">
-          <h2 class="tools__h2">VS Code</h2>
+          <h2 class="tools__h2"></h2>
         </div>
 
         <h3 class="tools__h3">Plug-In</h3>
@@ -213,7 +219,7 @@
       <article id="vue" class="tools__part">
         <div class="tools__header-block">
           <img class="tools__logo" src="../assets/img/vue-logo.svg" alt="логотип vue">
-          <h2 class="tools__h2">Vue</h2>
+          <h2 class="tools__h2"></h2>
         </div>
 
         <h3 class="tools__h3">Директивы</h3>
@@ -255,6 +261,34 @@
           </li>
         </ul>
       </article>
+      <!-- ====== -->
+
+      <!-- GIT -->
+      <article id="git" class="tools__part">
+        <div class="tools__header-block">
+          <img class="tools__logo" src="../assets/img/git-logo.svg" alt="логотип vue">
+          <h2 class="tools__h2"></h2>
+        </div>
+
+
+        <h3 class="tools__h3">Полезное</h3>
+        <ul class="tools__list">
+          <li class="tools__item tools__item--cmd">
+            <p class="tools__item-txt tools__item-txt--description">Исключение ранее добавленных файлов из
+              удаленного репозитория</p>
+            <div class="tools__item-wrapper">
+              <a href="#" class="tools__item-txt-cmd">git rm —cached path/to/file</a>
+            </div>
+          </li>
+          <li class="tools__item tools__item--cmd">
+            <p class="tools__item-txt tools__item-txt--description">Исключение ранее добавленной папки из
+              удаленного репозитория</p>
+            <div class="tools__item-wrapper">
+              <a href="#" class="tools__item-txt-cmd">git rm -r --cached (dir)</a>
+            </div>
+          </li>
+        </ul>
+      </article>
 
 
       <!-- GULP -->
@@ -278,7 +312,7 @@
       <article id="figma" class="tools__part">
         <div class="tools__header-block">
           <img class="tools__logo" src="../assets/img/figma-logo.svg" alt="логотип figma">
-          <h2 class="tools__h2">Дизайн</h2>
+          <h2 class="tools__h2"></h2>
         </div>
 
         <h3 class="tools__h3">Полезное</h3>

@@ -24,7 +24,7 @@
 export default {
 
   data: () => ({
-    title: 'Модальное окно',
+    title: '',
     show: true
 
   }),
