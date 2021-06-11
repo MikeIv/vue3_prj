@@ -11,7 +11,7 @@
                      v-model="name"
                      :class="{ errorInput: v$.name.$error }"
                      @change="v$.name.$touch()"
-                     >
+                     required>
             </div>
             <div class="modal__form-item">
               <label class="modal__label">Email:</label>
