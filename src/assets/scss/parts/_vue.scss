@@ -15,6 +15,8 @@
   background-color: $exlight;
 }
 
+
+
 .vue-message {
   display: flex;
   align-items: center;
@@ -280,7 +282,7 @@
   box-sizing: border-box;
 
   font-family: inherit;
-  font-size: $mainFS;
+  font-size: $mainFs;
   font-weight: 300;
   color: $vue;
 
@@ -339,7 +341,7 @@
   padding-right: 3rem;
   box-sizing: border-box;
 
-  font-size: $mainFS;
+  font-size: $mainFs;
   color: $white;
   background-color: $vue;
   border: none;
@@ -427,7 +429,7 @@ svg path {
 
 .modal__info-txt {
   width: 100%;
-  font-size: $mainFS;
+  font-size: $mainFs;
   font-weight: 300;
 }
 
@@ -436,11 +438,20 @@ svg path {
   flex-direction: column;
   justify-content: flex-start;
 
+}
 
+.modal__form-item {
+  position: relative;
+
+  width: 100%;
+
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: 0;
 }
 
 .modal__label {
-  font-size: $mainFS;
+  font-size: $mainFs;
   color: $gray;
 }
 
@@ -449,11 +460,34 @@ svg path {
   height: 4rem;
 
   margin: 0;
-  margin-bottom: 2rem;
   padding: 0;
   padding-left: 2rem;
   padding-right: 2rem;
   box-sizing: border-box;
 
+  font-size: $mainFs;
+  color: $base;
+
   border: 1px solid $gray;
+  border-radius: 0.4rem;
+}
+
+
+.modal__label-error {
+  position: absolute;
+  top: 0;
+  left: 5rem;
+
+  display: none;
+
+  font-size: $xs-Fs;
+  color: $warning;
+}
+
+.error .modal__label-error {
+  display: block;
+}
+
+input.errorInput {
+  border: 1px solid red;
 }

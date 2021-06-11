@@ -113,6 +113,7 @@ import search from '@/components/Search.vue'
 import modals from '@/components/Modals.vue'
 import modalValidate from '@/components/ModalValidate.vue'
 
+
 export default {
   name: 'Sandbox',
   components: {
@@ -120,7 +121,7 @@ export default {
     notes,
     search,
     modals,
-    modalValidate
+    modalValidate,
 
   },
   data: () => ({
