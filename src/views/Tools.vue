@@ -355,6 +355,10 @@
             <a href="https://habr.com/ru/company/macloud/blog/555400/" class="tools__item-link" target="_blank"></a>
             <p class="tools__item-txt">HTML-теги и атрибуты</p>
           </li>
+          <li class="tools__item tools__item--link">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques" class="tools__item-link" target="_blank"></a>
+            <p class="tools__item-txt">Using ARIA</p>
+          </li>
         </ul>
       </article>
 
