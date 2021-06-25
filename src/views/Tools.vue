@@ -228,7 +228,9 @@
           <li class="tools__item">
             <p class="tools__item-txt" data-title="подписки на события DOM и выполнения JavaScript-кода по их наступлении">v-on { @ } </p>
           </li>
-          <li class="tools__item"><p class="tools__item-txt">v-if / v-else-if / v-else</p></li>
+          <li class="tools__item">
+            <p class="tools__item-txt" data-title="рендеринга блока по условию">v-if / v-else-if / v-else</p>
+          </li>
           <li class="tools__item"><p class="tools__item-txt">v-for</p></li>
           <li class="tools__item"><p class="tools__item-txt">v-show</p></li>
           <li class="tools__item">
