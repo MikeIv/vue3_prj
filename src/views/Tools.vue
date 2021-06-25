@@ -225,7 +225,9 @@
         <h3 class="tools__h3">Директивы</h3>
         <ul class="tools__list">
           <li class="tools__item"><p class="tools__item-txt">v-bind { : }</p></li>
-          <li class="tools__item"><p class="tools__item-txt">v-on { @ } </p></li>
+          <li class="tools__item">
+            <p class="tools__item-txt" data-title="подписки на события DOM и выполнения JavaScript-кода по их наступлении">v-on { @ } </p>
+          </li>
           <li class="tools__item"><p class="tools__item-txt">v-if / v-else-if / v-else</p></li>
           <li class="tools__item"><p class="tools__item-txt">v-for</p></li>
           <li class="tools__item"><p class="tools__item-txt">v-show</p></li>
