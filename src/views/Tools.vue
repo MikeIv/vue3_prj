@@ -229,7 +229,9 @@
           <li class="tools__item"><p class="tools__item-txt">v-if / v-else-if / v-else</p></li>
           <li class="tools__item"><p class="tools__item-txt">v-for</p></li>
           <li class="tools__item"><p class="tools__item-txt">v-show</p></li>
-          <li class="tools__item"><p class="tools__item-txt">v-model</p></li>
+          <li class="tools__item">
+            <p class="tools__item-txt" data-title="двунаправленное связывание данных">v-model</p>
+          </li>
         </ul>
 
         <h3 class="tools__h3">Plug-In</h3>
@@ -380,6 +382,10 @@
           <li class="tools__item tools__item--link">
             <a href="https://habr.com/ru/company/macloud/blog/557796/" class="tools__item-link" target="_blank"></a>
             <p class="tools__item-txt">Трюки CSS</p>
+          </li>
+          <li class="tools__item tools__item--link">
+            <a href="https://hcdev.ru/" class="tools__item-link" target="_blank"></a>
+            <p class="tools__item-txt">Справочник HTML и CSS</p>
           </li>
         </ul>
       </article>
