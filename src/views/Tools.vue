@@ -179,6 +179,16 @@
           </li>
 
           <li class="tools__item tools__item--cmd">
+            <p class="tools__item-txt tools__item-txt--description">Ошибка unable to access /git</p>
+            <div class="tools__item-wrapper">
+              <p class="tools__item-txt-cmd">cd ~/</p>
+            </div>
+            <div class="tools__item-wrapper">
+              <p class="tools__item-txt-cmd">sudo chown -R username /Users/username</p>
+            </div>
+          </li>
+
+          <li class="tools__item tools__item--cmd">
             <p class="tools__item-txt tools__item-txt--description">Git commit дерево в консоли</p>
             <div class="tools__item-wrapper">
               <p class="tools__item-txt-cmd">git log --graph --pretty=oneline --abbrev-commit --all --decorate</p>
@@ -224,7 +234,9 @@
 
         <h3 class="tools__h3">Директивы</h3>
         <ul class="tools__list">
-          <li class="tools__item"><p class="tools__item-txt">v-bind { : }</p></li>
+          <li class="tools__item">
+            <p class="tools__item-txt" data-title="используется для реактивного обновления атрибутов HTML">v-bind { : }</p>
+          </li>
           <li class="tools__item">
             <p class="tools__item-txt" data-title="подписки на события DOM и выполнения JavaScript-кода по их наступлении">v-on { @ } </p>
           </li>
@@ -232,7 +244,9 @@
             <p class="tools__item-txt" data-title="рендеринга блока по условию">v-if / v-else-if / v-else</p>
           </li>
           <li class="tools__item"><p class="tools__item-txt">v-for</p></li>
-          <li class="tools__item"><p class="tools__item-txt">v-show</p></li>
+          <li class="tools__item">
+            <p class="tools__item-txt" data-title="условное отображение элемента, элемент с v-show будет всегда оставаться в DOM">v-show</p>
+          </li>
           <li class="tools__item">
             <p class="tools__item-txt" data-title="двунаправленное связывание данных">v-model</p>
           </li>
@@ -283,7 +297,7 @@
             <p class="tools__item-txt tools__item-txt--description">Исключение ранее добавленных файлов из
               удаленного репозитория</p>
             <div class="tools__item-wrapper">
-              <a href="#" class="tools__item-txt-cmd">git rm —cached path/to/file</a>
+              <a href="#" class="tools__item-txt-cmd">git rm -r —cached (path/to/file)</a>
             </div>
           </li>
           <li class="tools__item tools__item--cmd">
