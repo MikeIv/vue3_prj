@@ -390,7 +390,6 @@
           <h2 class="tools__h2"></h2>
         </div>
 
-
         <h3 class="tools__h3">Полезное</h3>
         <ul class="tools__list">
           <li class="tools__item tools__item--link">
@@ -405,8 +404,14 @@
             <a href="https://hcdev.ru/" class="tools__item-link" target="_blank"></a>
             <p class="tools__item-txt">Справочник HTML и CSS</p>
           </li>
+          <li class="tools__item tools__item--link">
+            <a href="https://habr.com/ru/company/macloud/blog/564182/" class="tools__item-link" target="_blank"></a>
+            <p class="tools__item-txt">Руководство по CSS Grid</p>
+          </li>
         </ul>
       </article>
+
+
 
       <!-- SASS -->
       <article id="sass" class="tools__part">
