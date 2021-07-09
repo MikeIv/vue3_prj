@@ -354,6 +354,11 @@
             <a href="https://element.eleme.io/" class="tools__item-link" target="_blank"></a>
             <p class="tools__item-txt">Element Компоненты</p>
           </li>
+
+          <li class="tools__item tools__item--link tools__item--mt">
+            <a href="https://habr.com/ru/company/alconost/blog/565438/" class="tools__item-link" target="_blank"></a>
+            <p class="tools__item-txt">Руководство по цвету</p>
+          </li>
         </ul>
       </article>
 
