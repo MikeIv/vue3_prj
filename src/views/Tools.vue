@@ -73,6 +73,12 @@
           </li>
 
           <li class="tools__item tools__item--logo">
+            <a href="#gulp" class="tools__item-link tools__item-link--logo">
+              <img class="tools__item-link-logo" src="../assets/img/webpack-logo.svg" alt="логотип">
+            </a>
+          </li>
+
+          <li class="tools__item tools__item--logo">
             <a href="#" class="tools__item-link tools__item-link--logo" >
               <img class="tools__item-link-logo" src="../assets/img/nodejs-logo.svg" alt="логотип">
             </a>
