@@ -73,7 +73,7 @@
           </li>
 
           <li class="tools__item tools__item--logo">
-            <a href="#gulp" class="tools__item-link tools__item-link--logo">
+            <a href="#webpack" class="tools__item-link tools__item-link--logo">
               <img class="tools__item-link-logo" src="../assets/img/webpack-logo.svg" alt="логотип">
             </a>
           </li>
@@ -329,6 +329,23 @@
         <ul class="tools__list">
           <li class="tools__item tools__item--link">
             <a href="https://habr.com/ru/post/560894/" class="tools__item-link" target="_blank"></a>
+            <p class="tools__item-txt">Вариант сборки</p>
+          </li>
+        </ul>
+      </article>
+
+      <!-- Webpack -->
+      <article id="webpack" class="tools__part">
+        <div class="tools__header-block">
+          <img class="tools__logo" src="../assets/img/webpack-logo.svg" alt="логотип gulp">
+          <h2 class="tools__h2"></h2>
+        </div>
+
+
+        <h3 class="tools__h3">Полезное</h3>
+        <ul class="tools__list">
+          <li class="tools__item tools__item--link">
+            <a href="https://github.com/vedees/webpack-template" class="tools__item-link" target="_blank"></a>
             <p class="tools__item-txt">Вариант сборки</p>
           </li>
         </ul>
