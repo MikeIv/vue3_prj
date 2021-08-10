@@ -79,7 +79,7 @@
           </li>
 
           <li class="tools__item tools__item--logo">
-            <a href="#" class="tools__item-link tools__item-link--logo" >
+            <a href="#node" class="tools__item-link tools__item-link--logo" >
               <img class="tools__item-link-logo" src="../assets/img/nodejs-logo.svg" alt="логотип">
             </a>
           </li>
@@ -330,6 +330,27 @@
           <li class="tools__item tools__item--link">
             <a href="https://habr.com/ru/post/560894/" class="tools__item-link" target="_blank"></a>
             <p class="tools__item-txt">Вариант сборки</p>
+          </li>
+        </ul>
+      </article>
+
+      <!-- Node -->
+      <article id="node" class="tools__part">
+        <div class="tools__header-block">
+          <img class="tools__logo" src="../assets/img/nodejs-logo.svg" alt="логотип gulp">
+          <h2 class="tools__h2"></h2>
+        </div>
+
+
+        <h3 class="tools__h3">Полезное</h3>
+        <ul class="tools__list">
+          <li class="tools__item tools__item--link">
+            <a href="https://docs.microsoft.com/ru-ru/windows/dev-environment/javascript/nodejs-on-windows" class="tools__item-link" target="_blank"></a>
+            <p class="tools__item-txt">Node.js nvm-win npm</p>
+          </li>
+          <li class="tools__item tools__item--link">
+            <a href="https://habr.com/ru/post/554944/" class="tools__item-link" target="_blank"></a>
+            <p class="tools__item-txt">Yarn 2</p>
           </li>
         </ul>
       </article>
