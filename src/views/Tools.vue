@@ -113,6 +113,18 @@
               <img class="tools__item-link-logo" src="../assets/img/bootstrap-new-logo.svg" alt="логотип">
             </a>
           </li>
+
+          <li class="tools__item tools__item--logo">
+            <a href="#pug" class="tools__item-link tools__item-link--logo">
+              <img class="tools__item-link-logo" src="../assets/img/pug-logo.svg" alt="логотип">
+            </a>
+          </li>
+
+          <li class="tools__item tools__item--logo">
+            <a href="#yarn" class="tools__item-link tools__item-link--logo">
+              <img class="tools__item-link-logo" src="../assets/img/yarn-logo.svg" alt="логотип">
+            </a>
+          </li>
         </ul>
       </article>
       <!-- ================= -->
@@ -368,6 +380,31 @@
           <li class="tools__item tools__item--link">
             <a href="https://github.com/vedees/webpack-template" class="tools__item-link" target="_blank"></a>
             <p class="tools__item-txt">Вариант сборки</p>
+          </li>
+        </ul>
+      </article>
+
+      <!-- PUG -->
+      <article id="pug" class="tools__part">
+        <div class="tools__header-block">
+          <img class="tools__logo" src="../assets/img/pug-logo.svg" alt="логотип gulp">
+          <h2 class="tools__h2"></h2>
+        </div>
+
+
+        <h3 class="tools__h3">Полезное</h3>
+        <ul class="tools__list">
+          <li class="tools__item tools__item--link">
+            <a href="https://gist.github.com/neretin-trike/53aff5afb76153f050c958b82abd9228" class="tools__item-link" target="_blank"></a>
+            <p class="tools__item-txt">Туториал</p>
+          </li>
+          <li class="tools__item tools__item--link">
+            <a href="https://html-to-pug.com/" class="tools__item-link" target="_blank"></a>
+            <p class="tools__item-txt">HTML to PUG</p>
+          </li>
+          <li class="tools__item tools__item--link">
+            <a href="https://codebeautify.org/html-to-pug-converter" class="tools__item-link" target="_blank"></a>
+            <p class="tools__item-txt">HTML to PUG / Code Beautify</p>
           </li>
         </ul>
       </article>
