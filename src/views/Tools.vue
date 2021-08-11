@@ -364,6 +364,10 @@
             <a href="https://habr.com/ru/post/554944/" class="tools__item-link" target="_blank"></a>
             <p class="tools__item-txt">Yarn 2</p>
           </li>
+          <li class="tools__item tools__item--link">
+            <a href="https://yarnpkg.com/getting-started/migration/#use-yarn-dlx-instead-of-yarn-global" class="tools__item-link" target="_blank"></a>
+            <p class="tools__item-txt">Yarn 2 Docs</p>
+          </li>
         </ul>
       </article>
 
